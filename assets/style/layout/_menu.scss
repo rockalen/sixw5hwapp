@@ -1,0 +1,131 @@
+body {    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.container-custom {
+    max-width: 1280px;
+}
+.custom-primary-bg, .list-group-item-action:focus{
+    background-color: $primary-bg-color;
+}
+
+.custom-btn-primary {
+    color: $text-font-primary;
+    background-color: $primary-bg-color;
+    border-color: $primary-btn-bd-color;
+    &:hover {
+        color: $text-back;
+        background-color: $text-point;
+        background-color: lighten($color: $text-point, $amount: 3%);
+    }
+}
+
+.custom-btn-success {
+    color: $text-back;
+    background-color: $text-point;
+    border-color: $text-point;
+    &:hover {
+        color: $text-back;
+        background-color: $text-point;
+        background-color: darken($color: $text-point, $amount: 10%);
+    }
+}
+
+// 改變BS4 text mark 背景及字顏色
+.mark, mark{
+    background-color: $primary-bg-color;
+    color:$text-point;
+}
+
+.sidebar{
+    position:fixed;
+    top:0;
+    bottom:240px;
+}
+.custom-gutters {
+    &.container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+   
+
+    .custom-nav-link{
+        display: flex;       
+    }    
+}
+.custom-item:hover{
+    border-left: 4px solid $text-point;    
+    
+}
+
+
+// 改變BS4選單hover顏色
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: $text-point !important;
+}
+
+.custom-media{
+    font-size: 14px;
+    img{
+        width: 40px;
+        height: 40px;
+        // border-radius: 24px;
+    }
+}
+.custom-list-style{
+    list-style-type:none;
+    li:before {
+        content: "•"; /* Insert content that looks like bullets */
+        padding-right: 8px;
+        /* color: blue; Or a color you prefer */
+    }
+}
+
+
+.dropdown-toggle::after{
+    display: inline-block;
+    // font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    // text-rendering: auto;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
+    content:"";
+    border: solid $text-point;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    
+}
+
+.sub-menu-add{
+    span{
+        color: $text-point;
+    }
+}
+
+.custom-page-link{
+    font-weight: 600;    
+    a{
+        
+        color: $text-point;
+        border: 1px solid $text-point;
+        span{
+            font-size: 16px;
+            vertical-align: middle;
+        }
+    }
+    :hover{
+        color:$text-back;
+        background-color: $text-point;
+    }
+    .page-item.active .page-link {
+        color:$text-back;
+        background-color: $text-point;
+    }
+
+}

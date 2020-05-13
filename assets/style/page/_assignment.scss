@@ -1,0 +1,17 @@
+.replay-bk{
+    position: relative;
+}
+.replay{
+    position: absolute;
+    display: none;
+    width: 95.3%;    
+    top: 52%;
+    bottom: 0;
+    .card-body p{
+        min-height:166px;
+    }
+    .card-footer{
+        background-color: $text-back;
+        border-top: 0;
+    }
+}

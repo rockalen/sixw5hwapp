@@ -1,0 +1,37 @@
+
+<nav class="align-items-start custom-primary-bg h-100 mr-4 navbar navbar-expand-lg p-0">
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- 主選單開始 -->
+    <div class="sidebar collapse navbar-collapse flex-column justify-content-between align-items-start" id="navbarNav">
+     
+      <ul class="flex-column navbar-nav w-100">
+        <li class="nav-item">
+           <a class="navbar-brand my-4 px-4" href="#">
+            <img src="./assets/images/logo-ANSWER.svg"  class="d-inline-block align-top p-2" alt="">        
+           </a>
+        </li>
+        <% for (i = 0; i < myObj.menu.length; i++) {%>
+            <li class="nav-item px-4 font-weight-bold custom-item">
+                <a class="nav-link custom-nav-link text-dark" href="<%- myObj.menu[i].link %>" target="<%- myObj.menu[i].target %>">
+                  <span class="material-icons mr-3">
+                    <%- myObj.menu[i].icon %>
+                  </span>
+                  <%- myObj.menu[i].title %>
+                </a>
+            </li>
+        <% } %>        
+      </ul>
+      <div class="media custom-media align-items-center px-4 py-2 my-4">
+        <img src="./assets/images/andychen.jpeg" class="mr-3 ml-2 rounded-circle" alt="...">
+        <div class="media-body">
+          <h6 class="my-1 font-weight-bold">Andy Chen</h6>
+          andy0401@mail.com
+        </div>
+      </div>
+    </div>
+    
+</nav>
+           

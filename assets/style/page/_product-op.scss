@@ -1,0 +1,35 @@
+// 系列鏡框PC版
+.product-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2.625rem;    
+    font-weight: 700;
+    line-height: 87px;
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 33.33%;
+        border-left: 1px solid $lt-gw;
+        border-right: 1px solid $lt-gw;
+        &:first-child{
+            border-bottom: 16px solid $md-red;
+        }
+        &:hover{
+            background-color: $lt-gw;
+        }
+        a{
+            display: flex;
+            color: $black;
+            img{
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+.product-banner{
+    display: flex;
+    justify-content: space-between;
+}

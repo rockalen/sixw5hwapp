@@ -1,0 +1,20 @@
+.table thead th{
+    border-top: 0;
+    border-bottom: 2px solid #000000;
+}
+.table-sel{
+    font-size:.8rem;
+    color: $text-point;
+    font-weight: bold;
+}
+
+.modal-header{
+    .media img{
+        width: 141px;
+        height: 141px;
+    }
+} 
+
+.table-view{
+    color: #2A8356;
+}
