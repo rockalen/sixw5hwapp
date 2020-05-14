@@ -140,6 +140,7 @@ current: index
             </li>
         </ul> 
         <div class="replay card mb-3" >
+            <form action="">
             <ul class="list-unstyled card-header custom-primary-bg d-flex align-items-center">
                 <li class="d-flex mr-4">
                     <h6 class="mb-1 font-weight-bold">Body Text</h6>
@@ -168,13 +169,19 @@ current: index
                     code
                 </li> 
             </ul>
-            <div class="replay-edit card-body d-flex">               
-                <p class="card-text text-muted">Reply an answer…</p>               
-            </div>
+            <!-- <div class="replay-edit card-body">                -->
+                <!-- <p class="card-text text-muted">Reply an answer…</p> -->
+                <div class="form-group">
+                    <!-- <label for="FormControlTextarea1">Example textarea</label> -->
+                    <textarea class="form-control border-0" id="FormControlTextarea1" rows="7" placeholder="Reply an answer…"></textarea>
+                </div>
+                              
+            <!-- </div> -->
             <div class="card-footer d-flex justify-content-end">
                 <input class="btn custom-btn-cancel btn-outline-success mr-4" type="button" value="Cancel">
                 <input class="btn custom-btn-success" type="submit" value="Reply">
             </div> 
+            </form> 
         </div>  
     </div>
 </div>

@@ -1,3 +1,6 @@
+.modal-content{
+    max-width: 480px;
+}
 .table thead th{
     border-top: 0;
     border-bottom: 2px solid #000000;
@@ -16,5 +19,8 @@
 } 
 
 .table-view{
-    color: #2A8356;
+    color: $text-point;
+}
+.custom-border-light{
+    border: 1px solid lighten($color: $text-font-primary, $amount: 80%) ;
 }

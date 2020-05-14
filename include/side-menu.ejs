@@ -13,9 +13,14 @@
             <img src="./assets/images/logo-ANSWER.svg"  class="d-inline-block align-top p-2" alt="">        
            </a>
         </li>
+        <% var titleAct="";%>
         <% for (i = 0; i < myObj.menu.length; i++) {%>
-            <li class="nav-item px-4 font-weight-bold custom-item">
-                <a class="nav-link custom-nav-link text-dark" href="<%- myObj.menu[i].link %>" target="<%- myObj.menu[i].target %>">
+          <% if (title == myObj.menu[i].title){ 
+            titleAct="active";            }
+            else
+            {titleAct="";          } %>
+            <li class="nav-item px-4 font-weight-bold custom-item <%-titleAct%>">
+                <a class="nav-link custom-nav-link text-dark " href="<%- myObj.menu[i].link %>" target="<%- myObj.menu[i].target %>">
                   <span class="material-icons mr-3">
                     <%- myObj.menu[i].icon %>
                   </span>
