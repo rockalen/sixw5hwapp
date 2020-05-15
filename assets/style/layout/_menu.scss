@@ -7,7 +7,7 @@ body {
 .custom-primary-bg, .list-group-item-action:focus{
     background-color: $primary-bg-color;
 }
-
+// 客製化主要按鈕樣式
 .custom-btn-primary {
     color: $text-font-primary;
     background-color: $primary-bg-color;
@@ -79,6 +79,8 @@ body {
         // border-radius: 24px;
     }
 }
+
+// 客製化reply編輯器內文字段落li標頭
 .custom-list-style{
     list-style-type:none;
     li:before {
@@ -88,22 +90,16 @@ body {
     }
 }
 
-
+// 改變nav-item dropdown icon 樣式
 .dropdown-toggle::after{
-    display: inline-block;
-    // font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    // text-rendering: auto;
-    // -webkit-font-smoothing: antialiased;
-    // -moz-osx-font-smoothing: grayscale;
+    display: inline-block;    
+    font-size: inherit;    
     content:"";
     border: solid $text-point;
     border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    
+    transform: rotate(45deg);    
 }
 
 .sub-menu-add{
